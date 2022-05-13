@@ -1,24 +1,52 @@
-body {
-    font-family: 'Work Sans', sans-serif;
+:root {
+    --primary-color: #00ffff; /* cyan */
+    --secondary-color: #f8d210; /* gold */
+    --tertiary-color: #fa26a0; /* hot-pink */
+    --quaternary-color: #f51720; /* chili-pepper-red */
+    /* color pallette/combo--> 'Retro Punch' 
+          source--> https://www.canva.com/colors/color-palettes/retro-punch/ */
+  
 }
 
-.gradient-custom-3 {
-    /* fallback for old browsers */
-    background: #84fab0;
+body {
+    font-family: 'Electrolize', sans-serif;
+}
+
+.title {
+    display: flex;
+    background-image: url('https://t4.ftcdn.net/jpg/02/71/12/01/360_F_271120192_ZDT2FCxH94akiIsOHwVULWnbNzi8Oagn.jpg');
+    background-size: cover;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    max-width: 100%;
+    padding-left: 5px;
+}
+
+.h1 {
+    display: flex;
+}
+
+.form-background {
+    position: -webkit-sticky;
+    position: absolute sticky;
+    background-image: url('https://i.pinimg.com/564x/74/9b/db/749bdb8e633874e3a49b2af1475db4a2.jpg');
+    background-size: cover;
+    padding: 2rem 1rem 1rem 1rem;
+}
+/* colors/gradient for 'REGISTER' btn */
+.gradient-custom-4 {
+    /* setting for old browsers */
+    background: #00ffff;
     
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    /* /* setting for older versions of Chrome and Safari */
+    background: -webkit-linear-gradient(to right, #fc70c1, #8a2be2, #00ffff, #00c8ff, #55a8fc, #0000ff);
     
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
-    }
-    .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-    }
+    /* setting for the updated browsers */
+    background: linear-gradient(to right, #fc70c1, #8a2be2, #00ffff, #00c8ff, #55a8fc, #0000ff);
+}
+
+
+
