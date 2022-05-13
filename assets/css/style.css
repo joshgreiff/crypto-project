@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #00ffff; /* cyan */
+  --secondary-color: #f8d210; /* gold */
+  --tertiary-color: #fa26a0; /* hot-pink */
+  --quaternary-color: #f51720; /* chili-pepper-red */
+  /* color pallette/combo--> 'Retro Punch' 
+        source--> https://www.canva.com/colors/color-palettes/retro-punch/ */
+
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: #000000;
+  }
+  
+  /*a:visited {
+    color: #00ffff;
+  }*/
+  
+  a:focus {
+    border-bottom: 1px solid;
+    background: #66fcf1;
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    background: #00ffff;
+    border-radius: 5px;
+  }
+  
+  a:active {
+    background: #000000;
+    color: #66fcf1;
+  }
+
+.title {
+  position: -webkit-sticky;
+  position: absolute sticky;
+  background-image: url('https://t4.ftcdn.net/jpg/02/71/12/01/360_F_271120192_ZDT2FCxH94akiIsOHwVULWnbNzi8Oagn.jpg');
+  background-size: cover;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin:auto;
+    height:300px;
+    width:300px;
+}
+.neon-text {
+  /* adds neon glow effect to text */
+  color: #fff;
+  text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+
+  /* adds a flickering effect to the text */
+  animation: flicker 1.5s infinite alternate;
+    -webkit-animation: 1.5s infinite alternate;
+    @keyframes flicker {
+    
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+          text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px #0fa,
+          0 0 80px #0fa,
+          0 0 90px #0fa,
+          0 0 100px #0fa,
+          0 0 150px #0fa;
+      
+      }
+      
+      20%, 24%, 55% {        
+          text-shadow: none;
+      }    
+    }
+    @-webkit-keyframes flicker {
+  
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+          text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px #0fa,
+          0 0 80px #0fa,
+          0 0 90px #0fa,
+          0 0 100px #0fa,
+          0 0 150px #0fa;
+      
+      }
+      
+      20%, 24%, 55% {        
+          text-shadow: none;
+      }    
+    }
+    @-moz-keyframes flicker {
+  
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+          text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px #0fa,
+          0 0 80px #0fa,
+          0 0 90px #0fa,
+          0 0 100px #0fa,
+          0 0 150px #0fa;
+      
+      }
+      
+      20%, 24%, 55% {        
+          text-shadow: none;
+      }    
+    }
+  /* adds blinking effect to text */
+  animation: blink-animation 3s steps(5, start) infinite;
+        -webkit-animation: blink-animation 3s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-moz-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+
+.nav-list {
+    background:white;
+    box-shadow: 0px 0px 10px; 
+    padding: 1rem 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
