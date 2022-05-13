@@ -52,6 +52,13 @@ a {
   }
 /* END of link behavior*/
 
+.nav-list {
+  border:#bc13fe solid 3px;
+  border-top-width: 4px;
+  border-radius: 3px;
+  
+}
+
 .title {
   display: flex;
   background-image: url('https://t4.ftcdn.net/jpg/02/71/12/01/360_F_271120192_ZDT2FCxH94akiIsOHwVULWnbNzi8Oagn.jpg');
