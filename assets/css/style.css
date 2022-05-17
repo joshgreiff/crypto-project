@@ -136,8 +136,7 @@ h1 {
     0 0 80px #f09,
     0 0 94px #f09,
     0 0 140px #f09;
-
-}
+  }
 }
 
   /* adds blinking effect to text *//*
@@ -178,14 +177,6 @@ h1 {
   padding: 0.5rem 0 1.5rem 0;
   animation: flicker;
 }
-/* Website's name styling*/
-.elec-trivia {
-  flex-wrap: nowrap;
-  font-weight: bold;
-  font-size: 5.5vh;
-  padding:0.5rem 0 1rem 0;
-  animation: flicker;
-}
 .elec-span {
   color: #fff;
   text-shadow:
@@ -197,39 +188,32 @@ h1 {
   0 0 92px #f8d210,
   0 0 102px #f8d210,
   0 0 151px #f8d210;
+
+  animation: pulsate 0.11s ease-in-out infinite alternate
 }
 
-@keyframes pulsate {
-  
-100% {
-
-    text-shadow:
-    0 0 4px #fff,
-    0 0 11px #fff,
-    0 0 19px #fff,
-    0 0 40px #f8d210,
-    0 0 80px #f8d210,
-    0 0 90px #f8d210,
-    0 0 100px #f8d210,
-    0 0 150px #f8d210;
-
+/* Website's name styling*/
+.elec-trivia {
+  flex-wrap: nowrap;
+  font-weight: bold;
+  font-size: 5.5vh;
+  padding:0.5rem 0 1rem 0;
+  animation: flicker;
 }
-
-0% {
-
+/*.elec-span {
+  color: #fff;
   text-shadow:
-  0 0 4px #fff,
+  0 0 7px #fff,
   0 0 10px #fff,
-  0 0 18px #fff,
-  0 0 38px #f8d210,
-  0 0 73px #f8d210,
-  0 0 80px #f8d210,
-  0 0 94px #f8d210,
-  0 0 140px #f8d210;
+  0 0 21px #fff,
+  0 0 42px #f8d210,
+  0 0 82px #f8d210,
+  0 0 92px #f8d210,
+  0 0 102px #f8d210,
+  0 0 151px #f8d210;
 
-}
-}
-  
+  animation: pulsate 0.11s ease-in-out infinite alternate
+} */
 
         
 
