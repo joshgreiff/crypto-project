@@ -63,9 +63,9 @@ Question.hasMany(Choice, {
 //   foreignKey: 'tag_id'
 // })
 
-module.exports = {
-  Product,
-  Category,
-  Tag,
-  ProductTag,
-}
+// module.exports = {
+//   Category,
+//   Quiz,
+//   Question,
+//   Choice
+// }
