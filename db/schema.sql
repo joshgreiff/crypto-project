@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 DROP DATABASE IF EXISTS trivia;
 
+=======
+-- DROP DATABASE
+DROP DATABASE IF EXISTS trivia;
+
+-- CREATE DATABASE
+>>>>>>> 6f46e9ac4b8dc4cdf61fce6ed87006e4b17dc5ed
 CREATE DATABASE trivia;
