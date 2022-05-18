@@ -37,6 +37,9 @@ router.post('/signup', (req, res) => {
 
 // login route
 router.post('/login/:id', (req, res) => {
+    //1. Find a user by id
+    //2. inside then, test if user passwrod is correct using bcrypt validator
+    //3. start a session for this user info, 
     
     User.findAll()
     .then(dbUserData => res.json(dbUserData))

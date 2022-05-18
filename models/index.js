@@ -1,9 +1,9 @@
 // import models
 
-// const Category = require('./Category');
-// const Quiz = require('./Quiz')
-// const Question = require('./Question')
-// const Choice = require('./Choice')
+const Category = require('./Category');
+const Quiz = require('./Quiz')
+const Question = require('./Question')
+const Choice = require('./Choice')
 
 const User = require('./User')
 
@@ -64,9 +64,9 @@ const User = require('./User')
 // })
 
 module.exports = {
-//   Category,
-//   Quiz,
-//   Question,
-//   Choice,
+  Category,
+  Quiz,
+  Question,
+  Choice,
   User
 }
