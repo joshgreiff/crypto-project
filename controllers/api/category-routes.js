@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category } = require('../../models')
+const { Category, Quiz } = require('../../models')
 
 
 router.get('/', (req, res) => {
@@ -15,7 +15,13 @@ router.get('/:id', (req, res) => {
     Category.findOne({
         where: {
             id: req.params.id   
-        }
+        },
+        include: [
+            {
+              model: Quiz,
+              attributes: ['id', 'quiz_name']
+            },
+          ]
     })
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
