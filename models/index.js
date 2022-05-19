@@ -27,7 +27,11 @@ Choice.belongsTo(Question)
 // // Question have many choices
 Question.hasMany(Choice)
 
+// quiz belongs to user
+Quiz.belongsTo(User)
 
+// user has many quizzes
+User.hasMany(Quiz)
 
 
 

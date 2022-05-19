@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Quiz, Question, Choice } = require('../../models')
+const { Quiz, Question, Choice, User } = require('../../models')
 
 
 router.get('/', (req, res) => {
@@ -25,10 +25,10 @@ router.get('/:id', (req, res) => {
                 model: Choice,
                 attributes: ['answer_text']
               }
-            }
+            },
             // {
-            //   model: Tag, as: 'tag',
-            //   attributes: ['id', 'tag_name']
+            //   model: User,
+            //   attributes: ['id', 'username']
             // }
           ]
     })

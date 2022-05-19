@@ -1,17 +1,32 @@
 const router = require('express').Router()
+const { Quiz, Question, Choice } = require('../models')
 
 router.get('/', (req, res) => {
-    res.render('homepage', {
-        id: 1,
-        post_url: 'https://handlebarsjs.com/guide/',
-        title: 'Handlebars Docs',
-        created_at: new Date(),
-        vote_count: 10,
-        comments: [{}, {}],
-        user: {
-          username: 'test_user'
+  Quiz.findAll({
+    attributes: ['id', 'quiz_name'],
+    
+    include: [
+        {
+          model: Question,
+          attributes: ['id', 'question_text'],
+          include: {
+            model: Choice,
+            attributes: ['answer_text']
+          }
         }
-    })
+      ]
+})
+    
+    .then(dbPostData => {
+      const quizzes = dbPostData.map(quiz => quiz.get({ plain: true }));
+      console.log(quizzes)
+      res.render('homepage', { quizzes })
+    }
+    )
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 })
 
 module.exports = router
