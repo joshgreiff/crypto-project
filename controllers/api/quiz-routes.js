@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Quiz } = require('../../models')
+const { Quiz, Question, Choice } = require('../../models')
 
 
 router.get('/', (req, res) => {
@@ -13,10 +13,26 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
     Quiz.findOne({
+        attributes: ['id', 'quiz_name'],
         where: {
             id: req.params.id   
-        }
+        },
+        include: [
+            {
+              model: Question,
+              attributes: ['id', 'question_text'],
+              include: {
+                model: Choice,
+                attributes: ['answer_text']
+              }
+            }
+            // {
+            //   model: Tag, as: 'tag',
+            //   attributes: ['id', 'tag_name']
+            // }
+          ]
     })
+        
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
             console.log(err);
