@@ -25,6 +25,7 @@ router.post('/signup', (req, res) => {
     bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
         User.create({
             username: req.body.username,
+            name: req.body.name,
             password: hash
         }).then(dbUserData => {
             res.json(dbUserData)
@@ -36,7 +37,7 @@ router.post('/signup', (req, res) => {
 })
 
 // login route
-router.post('/login/:id', (req, res) => {
+router.post('/login', (req, res) => {
     //1. Find a user by id
     User.findOne({
         where: {
@@ -54,20 +55,21 @@ router.post('/login/:id', (req, res) => {
                 return
               }
               if(result){
-                // req.session.save(() => {
-                //     // declare session variables
-                //     req.session.user_id = dbUserData.id;
-                //     req.session.username = dbUserData.username;
-                //     req.session.loggedIn = true;
-              
-                //     res.json({ user: dbUserData, message: 'You are now logged in!' });
-                // })
+                
                 console.log('worked')
                 res.json(dbUserData)
               }else{
                 res.json('Incorrect login info')
                 return
               }
+              req.session.save(() => {
+                // declare session variables
+                req.session.user_id = dbUserData.id;
+                req.session.username = dbUserData.username;
+                req.session.loggedIn = true;
+          
+                res.json({ user: dbUserData, message: 'You are now logged in!' });
+              });
           })
     })
 
