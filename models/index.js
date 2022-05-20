@@ -35,6 +35,8 @@ User.hasMany(Quiz)
 
 
 
+
+
 module.exports = {
   Category,
   Quiz,
