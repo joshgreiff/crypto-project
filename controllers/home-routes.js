@@ -2,6 +2,7 @@ const router = require('express').Router()
 const { Quiz, Question, Choice } = require('../models')
 
 router.get('/', (req, res) => {
+  console.log(req.session)
   Quiz.findAll({
     attributes: ['id', 'quiz_name'],
     
@@ -20,7 +21,7 @@ router.get('/', (req, res) => {
     .then(dbPostData => {
       const quizzes = dbPostData.map(quiz => quiz.get({ plain: true }));
       
-      res.render('homepage', { quizzes })
+        res.render('homepage', { quizzes })
     }
     )
     .catch(err => {
@@ -30,6 +31,11 @@ router.get('/', (req, res) => {
 })
 
 router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  
   res.render('login')
 })
 
