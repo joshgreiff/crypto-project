@@ -44,7 +44,8 @@ router.post('/', (req, res) => {
 
     Quiz.create({
         quiz_name: req.body.quiz_name,
-        category_id: req.body.category_id
+        category_id: req.body.category_id,
+        user_id: req.body.user_id
     }).then(dbQuizData => {
         res.json(dbQuizData)
     }).catch(err => {

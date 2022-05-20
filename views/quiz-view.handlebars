@@ -1,0 +1,9 @@
+<article class="quiz">
+    <h1>{{ quiz.quiz_name }}</h1>
+    {{#each quiz.questions}}
+    <h2>{{question_text}}</h3>
+        {{#each choices}}
+            <h4>{{answer_text}}</h4>
+        {{/each}}
+    {{/each}}
+</article>

@@ -1,8 +1,8 @@
 const router = require('express').Router()
-const { Quiz, Question, Choice } = require('../models')
+const { Quiz, Question, Choice, User } = require('../models')
 
 router.get('/', (req, res) => {
-  console.log(req.session)
+  
   Quiz.findAll({
     attributes: ['id', 'quiz_name'],
     
@@ -41,6 +41,44 @@ router.get('/login', (req, res) => {
 
 router.get('/create-quiz', (req, res) => {
   res.render('create-quiz')
+})
+
+router.get('/quiz/:id', (req, res) => {
+  Quiz.findOne({
+    attributes: ['id', 'quiz_name'],
+        where: {
+            id: req.params.id   
+        },
+        include: [
+            {
+              model: Question,
+              attributes: ['id', 'question_text'],
+              include: {
+                model: Choice,
+                attributes: ['answer_text']
+              }
+            },
+            {
+              model: User,
+              attributes: ['id', 'username']
+            }
+          ]
+  }).then(dbQuizData => {
+    if (!dbQuizData) {
+      res.status(404).json({ message: 'No post found with this id' });
+      return;
+    }
+
+    // serialize the data
+    const quiz = dbQuizData.get({ plain: true });
+    console.log(quiz)
+    // pass data to template
+    res.render('quiz-view', { quiz });
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 })
 
 module.exports = router
