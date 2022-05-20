@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
     .then(dbPostData => {
       const quizzes = dbPostData.map(quiz => quiz.get({ plain: true }));
       
-        res.render('homepage', { quizzes })
+        res.render('homepage', { quizzes, loggedIn: req.session.loggedIn })
     }
     )
     .catch(err => {
@@ -36,7 +36,7 @@ router.get('/login', (req, res) => {
     return;
   }
   
-  res.render('login')
+  res.render('login', {loggedIn: req.session.loggedIn})
 })
 
 router.get('/create-quiz', (req, res) => {
@@ -73,7 +73,7 @@ router.get('/quiz/:id', (req, res) => {
     const quiz = dbQuizData.get({ plain: true });
     console.log(quiz)
     // pass data to template
-    res.render('quiz-view', { quiz });
+    res.render('quiz-view', { quiz, loggedIn: req.session.loggedIn });
   })
   .catch(err => {
     console.log(err);
