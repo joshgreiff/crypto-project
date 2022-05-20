@@ -53,12 +53,18 @@
                         </li>
                         <li class="btn btn-default btn-lg">
                             <!-- Link to login/create account html page -->
+                            {{#unless loggedIn}}
                             <button style="none" href="./login.html" id="login">LOG IN</button> <!-- *ATTENTION*This text will need to change once the user logs in, to say " Hello, 'username' "-->
+                            {{/unless}}
                         </li>
 
                         <li class="btn btn-default btn-lg">
                             <!-- Link to login/create account html page -->
+                            {{#if loggedIn}}
+
                             <button style="none" href="./login.html" id="logout">LOG OUT</button> <!-- *ATTENTION*This text will need to change once the user logs in, to say " Hello, 'username' "-->
+                            {{/if}}
+
                         </li>
                     </ul>
                 </nav> <!-- END top navigation -->
