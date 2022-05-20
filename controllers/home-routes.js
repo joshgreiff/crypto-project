@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
     
     .then(dbPostData => {
       const quizzes = dbPostData.map(quiz => quiz.get({ plain: true }));
-      console.log(quizzes)
+      
       res.render('homepage', { quizzes })
     }
     )
@@ -31,6 +31,10 @@ router.get('/', (req, res) => {
 
 router.get('/login', (req, res) => {
   res.render('login')
+})
+
+router.get('/create-quiz', (req, res) => {
+  res.render('create-quiz')
 })
 
 module.exports = router
