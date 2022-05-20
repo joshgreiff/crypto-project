@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require("sequelize/types");
+const { Model, DataTypes } = require("sequelize");
 
 const sequelize = require('../config/connection.js');
 
@@ -28,6 +28,7 @@ Question.init(
         sequelize,
         timestamps: false,
         freezeTableName: true,
+        underscored: true,
         modelName: 'question'
     }
 )
