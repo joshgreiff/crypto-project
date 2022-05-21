@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const categoryRoutes = require('./category-routes')
-const choicesRoutes = require('./choices-routes');
+const choicesRoutes = require('./choices-routes.js');
 const questionRoutes = require('./question-routes');
 const quizRoutes = require('./quiz-routes');
 const userRoutes = require('./user-routes');
