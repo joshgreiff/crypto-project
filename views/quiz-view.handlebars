@@ -1,0 +1,13 @@
+<article class="quiz">
+    <h2>{{quiz.quiz_name }}</h2>
+    <div>
+        {{#each quiz.questions}}
+        {{question_text}}
+        <div>
+            {{#each choices}}
+            <button type="button" class="btn btn-primary">{{answer_text}}</button>
+        </div>
+        {{/each}}
+        {{/each}}
+    </div>
+</article>

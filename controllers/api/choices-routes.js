@@ -14,14 +14,14 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     Choice.findOne({
         where: {
-            id: req.params.id   
+            id: req.params.id
         }
     })
         .then(dbChoiceData => res.json(dbChoiceData))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
-        });
+        }); q
 })
 
 router.post('/', (req, res) => {

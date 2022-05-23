@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     Question.findOne({
         where: {
-            id: req.params.id   
+            id: req.params.id
         }
     })
         .then(dbQuestionData => res.json(dbQuestionData))
