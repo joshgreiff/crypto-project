@@ -1,5 +1,10 @@
 node_modules
+<<<<<<< HEAD
 .package-lock-json
 .DS_Store
 .env
+=======
+package-lock.json
+.DS_Store
+>>>>>>> 98e65efceb83bdc29c82819b99818c7619c642f1
 

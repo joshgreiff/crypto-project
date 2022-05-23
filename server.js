@@ -34,7 +34,11 @@ app.use(routes)
 
 // turn on connection to db and server
 sequelize.query('SET FOREIGN_KEY_CHECKS = 0', { raw: true }).then(function () {
+<<<<<<< HEAD
   sequelize.sync({ force: true }).then(function () {
+=======
+  sequelize.sync({ force: false }).then(function () {
+>>>>>>> 98e65efceb83bdc29c82819b99818c7619c642f1
     app.listen(PORT, () => console.log('Now listening'))
   });
 });
