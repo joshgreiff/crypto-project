@@ -30,12 +30,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(routes)
 
 
-  
+
 
 // turn on connection to db and server
-sequelize.query('SET FOREIGN_KEY_CHECKS = 0', { raw: true }).then ( function () {
-    sequelize.sync ({ force: false }).then ( function () {
-        app.listen(PORT, () => console.log('Now listening'))
-    });
+sequelize.query('SET FOREIGN_KEY_CHECKS = 0', { raw: true }).then(function () {
+  sequelize.sync({ force: true }).then(function () {
+    app.listen(PORT, () => console.log('Now listening'))
+  });
 });
 
