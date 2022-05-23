@@ -4,7 +4,7 @@
   --tertiary-color: #fa26a0;   /* hot-pink === rgba(250, 38, 160, 1) */
   --quaternary-color: #f51720; /* chili-pepper-red === rgba(245, 23, 32, 1) */
   --quinary-color: #bc13fe;    /* electric-purple === rgba(188, 19, 254, 1)*/
-  /* color pallette/combo--> 'Retro Punch' 
+  /* color pallette/combo inpiration name--> 'Retro Punch' 
      source--> https://www.canva.com/colors/color-palettes/retro-punch/ */
 }
 *{
@@ -241,6 +241,8 @@ h1 {
     margin-right: auto;
     margin-left: 2rem;
 }
+
+.m-4
 
 /* Need some help setting up media queries!*/
 @media {
