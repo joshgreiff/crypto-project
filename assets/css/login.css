@@ -6,6 +6,7 @@
     --quinary-color: #bc13fe;    /* electric-purple === rgba(188, 19, 254, 1)*/
     /* color pallette/combo--> 'Retro Punch' 
           source--> https://www.canva.com/colors/color-palettes/retro-punch/ */
+  
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 .title {
     display: flex;
-    /* removed/changed bg image and moved/used <style> in html */
+    background-image: url('https://t4.ftcdn.net/jpg/02/71/12/01/360_F_271120192_ZDT2FCxH94akiIsOHwVULWnbNzi8Oagn.jpg');
     background-size: cover;
     padding: 1rem 1rem 1rem 1rem;
     display: flex;
@@ -47,3 +48,5 @@ body {
     /* setting for the updated browsers */
     background: linear-gradient(to right, #fc70c1, #8a2be2, #00ffff, #00c8ff, #55a8fc, #0000ff);
 }
+
+
