@@ -15,7 +15,7 @@ body {
 
 .title {
     display: flex;
-    background-image: url('https://t4.ftcdn.net/jpg/02/71/12/01/360_F_271120192_ZDT2FCxH94akiIsOHwVULWnbNzi8Oagn.jpg');
+    /* removed/changed bg image and moved/used <style> in html */
     background-size: cover;
     padding: 1rem 1rem 1rem 1rem;
     display: flex;
