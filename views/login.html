@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SUPER TRIVIA</title>
-        <link rel="icon" type="image/x-icon" href="./assets/trivia-favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/assets/trivia-favicon.ico">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,25 +24,29 @@
         </div>
 
         <header>
-            <nav> <!-- START top navigation, insert links for top navigation bar-->
-                <ul style="list-style: none;" class="nav-list">
-                    <li class="nav-item">
-                        <a href="#HOME">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#ABOUT">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#TRIVIA">TRIVIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#RESOURCES">RESOURCES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./login.html">LOG IN</a> <!-- This text will need to change once the user logs in to say " Hello, 'username' "-->
-                    </li>
-                </ul>
-            </nav> <!-- END top navigation -->
+            <div class="nav-container"></div>
+            <!-- START top navigation, insert links for top navigation bar-->
+                <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to right, #fc41ae, #ff5bf1, #d246eb, #bc13fe, #00ffff, #1098e1)"> 
+                    <a style="navbar-brand" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trivia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color:black;" href="./login.html">LOG IN</a> <!-- *ATTENTION*--This text will need to change once the user logs in, to say " Hello, 'username' "-->
+                            </li>
+                        </ul>
+                    </div>
+                </nav> 
+            <!-- END top navigation -->
+            </div>
         </header>
     <!-- CREATE ACCOUNT FORM -->
     <section class="form-background">
@@ -99,12 +103,16 @@
             </div>
             </div>
         </div>
-    </section>
-    
-    </body>   
+    </section>  
     
     <footer>
 
     </footer>
 
+    <script src=""></script> <!-- Insert links to JS files here-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/017e713434.js" crossorigin="anonymous"></script>
+ 
+    </body>     
 </html>

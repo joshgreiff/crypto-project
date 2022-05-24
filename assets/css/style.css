@@ -12,7 +12,6 @@
   /* color pallette/combo inpiration name--> 'Retro Punch' 
      source--> https://www.canva.com/colors/color-palettes/retro-punch/ */
 }
-
 *{
   margin: 0;
   padding: 0;
@@ -98,7 +97,7 @@ h1 {
     0 0 2rem #00ffff,
     0 0 0.8rem #00ffff,
     0 0 2.8rem #00ffff,
-    inset 0 0 1.3rem #00ffff;
+              inset 0 0 1.3rem #00ffff;
   
 }
 
