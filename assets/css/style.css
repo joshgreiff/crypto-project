@@ -214,3 +214,13 @@ h1 {
   height: auto;
   box-shadow: 3px 1px 8px 1px #000000;
 }
+
+footer {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px 1px 3px 1px;
+  border-radius: 2px;
+  width: auto;
+  height: auto;
+  box-shadow: 3px 1px 8px 1px #000000;
+}
