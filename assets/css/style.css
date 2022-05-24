@@ -18,47 +18,23 @@ body {
   font-family: 'Electrolize', sans-serif;
 }
 
-/* START of link behavior */
-a {
-    outline: none;
-    text-decoration: none;
-    padding: 2px 1px 0;
-  }
-  
-  a:link {
-    color: #ffffff;
-  }
-  
-  /* IF we want to add styling to links already visited/clicked */
-  /*a:visited {
-    color: #;
-  }
-  */
-  
-  a:focus {
-    border-bottom: 1px solid;
-    background: #66fcf1;
-  }
-  
-  a:hover {
-    border-bottom: 1px solid;
-    background-color: rgba(0,255,255,0.5);
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  a:active {
-    background: #000000;
-    color: #66fcf1;
-  }
+/* START of link behavior
+
+a:hover {
+}
+
 /* END of link behavior*/
 
+
+/*
 .nav-list {
   border:#bc13fe solid 3px;
   border-top-width: 4px;
   border-radius: 3px;
 
 }
+*/
+
 
 .title {
   display: flex;
@@ -277,7 +253,7 @@ h1 {
   animation: pulsate 0.11s ease-in-out infinite alternate
 } */
 
-        
+    /*    
 .nav-list {
     background:white;
     box-shadow: 0px 0px 10px; 
@@ -303,5 +279,6 @@ h1 {
     margin-left: 2rem;
 }
 
+*/
 
 /* Need some help setting up media queries here!*/
