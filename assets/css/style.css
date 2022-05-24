@@ -1,9 +1,14 @@
 :root {
-  --primary-color: #00ffff;    /* cyan === rgba(0,255,255,1) */
-  --secondary-color: #f8d210;  /* gold === rgba(248, 210, 16, 1) */
-  --tertiary-color: #fa26a0;   /* hot-pink === rgba(250, 38, 160, 1) */
-  --quaternary-color: #f51720; /* chili-pepper-red === rgba(245, 23, 32, 1) */
-  --quinary-color: #bc13fe;    /* electric-purple === rgba(188, 19, 254, 1)*/
+  --primary-color: #00ffff;    
+  /* cyan === rgba(0,255,255,1) */
+  --secondary-color: #f8d210;  
+  /* gold === rgba(248, 210, 16, 1) */
+  --tertiary-color: #fa26a0;   
+  /* hot-pink === rgba(250, 38, 160, 1) */
+  --quaternary-color: #f51720; 
+  /* chili-pepper-red === rgba(245, 23, 32, 1) */
+  --quinary-color: #bc13fe;    
+  /* electric-purple === rgba(188, 19, 254, 1)*/
   /* color pallette/combo inpiration name--> 'Retro Punch' 
      source--> https://www.canva.com/colors/color-palettes/retro-punch/ */
 }
@@ -88,10 +93,10 @@ h1 {
   border-radius: 2rem;
   padding: 0.4em;
   box-shadow: 0 0 .2rem #fff,
-              0 0 .2rem #fff,
-              0 0 2rem #00ffff,
-              0 0 0.8rem #00ffff,
-              0 0 2.8rem #00ffff,
+    0 0 .2rem #fff,
+    0 0 2rem #00ffff,
+    0 0 0.8rem #00ffff,
+    0 0 2.8rem #00ffff,
               inset 0 0 1.3rem #00ffff;
   
 }
