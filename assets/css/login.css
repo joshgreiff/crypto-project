@@ -49,4 +49,27 @@ body {
     background: linear-gradient(to right, #fc70c1, #8a2be2, #00ffff, #00c8ff, #55a8fc, #0000ff);
 }
 
+.nav-container {
+    font-weight: bold;
+  }
+  .nav-border {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 3px 1px 3px 1px;
+    border-radius: 2px;
+    width: auto;
+    height: auto;
+    box-shadow: 5px 1px 8px 1px #000000;
+  }
+  
+  footer {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 5px 1px 5px 1px;
+    border-radius: 2px;
+    width: auto;
+    height: auto;
+    box-shadow: 5px 1px 8px 1px #000000;
+  }
+
 
