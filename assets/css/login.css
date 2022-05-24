@@ -51,25 +51,60 @@ body {
 
 .nav-container {
     font-weight: bold;
-  }
-  .nav-border {
-    border-style: solid;
-    border-color: #000000;
-    border-width: 3px 1px 3px 1px;
-    border-radius: 2px;
-    width: auto;
-    height: auto;
-    box-shadow: 5px 1px 8px 1px #000000;
-  }
-  
-  footer {
-    border-style: solid;
-    border-color: #000000;
-    border-width: 5px 1px 5px 1px;
-    border-radius: 2px;
-    width: auto;
-    height: auto;
-    box-shadow: 5px 1px 8px 1px #000000;
-  }
+}
+.nav-border {
+border-style: solid;
+border-color: #000000;
+border-width: 3px 1px 3px 1px;
+border-radius: 2px;
+width: auto;
+height: auto;
+box-shadow: 5px 1px 8px 1px #000000;
+background: linear-gradient(to right, #fc41ae, #ff5bf1, #d246eb, #bc13fe, #00ffff, #1098e1)">
+}
+
+footer {
+background-image: url('https://i.pinimg.com/564x/06/53/bb/0653bba07f479528b85722d8373957ca.jpg');
+border-style: solid;
+border-color: #000000;
+border-width: 5px 1px 3px 1px;
+border-radius: 2px;
+width: auto;
+height: auto;
+box-shadow: 5px 1px 8px 1px #000000;
+color:#00ffff;
+padding:2.75vh 0 auto 0;
+}
+
+.support {
+padding: 1rem 0 1rem 0;
+font-weight: bold;
+text-decoration: #00ffff;
+font-size: larger;
+text-shadow:3px 0 3px 0 #0021a7;
+
+}
+
+.support a {
+color: #00ffff;
+font-style: italic;
+text-decoration: underline 3px #fb8cff;
+text-shadow:3px 0 3px 0 #0021a7;
+}
+
+.About {
+font-size: larger;
+color:#fb8cff;
+font-weight: bolder;
+text-shadow: 3px 1px 3px 1px #ff0095;
+}
+
+.Copyright {
+border-top: 2px solid #000000;
+border-style: double;
+padding: 2rem 0 1rem 0;
+color: #000000;
+background: linear-gradient(to left, #fc41ae, #ff5bf1, #d246eb, #bc13fe, #00ffff, #1098e1);
+}
 
 
