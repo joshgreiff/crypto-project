@@ -29,7 +29,8 @@
     🗲 Heroku 
 
 ## Screenshots
-    https://user-images.githubusercontent.com/79293495/170133949-4dfd6d43-d6ef-400c-bf6e-65c4b1f2460d.png
+    <img width="738" alt="Screen Shot 2022-05-24 at 5 16 44 PM" src="https://user-images.githubusercontent.com/79293495/170134204-a6396328-e1f2-4c7e-8722-4150a9be4eef.png">
+
 
 
 ## Links
