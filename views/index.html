@@ -21,13 +21,13 @@
                 <a href="#./index.html"></a>
                     <div class="greeting-container">
                         <div class="welcome"> 
-                            <a>WELCOME!</a> 
+                            <p>WELCOME!</p> 
                         </div>  
                         <div class="to"> 
-                            <a>to:</a> 
+                            <p>to:</p> 
                         </div>
                         <div class="elec-trivia">
-                            <a>ELEC<span class="elec-span">TRIVIA</span>.</a> 
+                            <p>ELEC<span class="elec-span">TRIVIA</span>.</p> 
                         </div>
 
                     </div>
@@ -37,23 +37,22 @@
 
         <header>
             <div class="nav-container">
-                <nav class="nav-bar"> <!-- START top navigation, insert links for top navigation bar-->
-                    <ul style="list-style: none;" class="nav-list">
-                        <li class="nav-item">
-                            <a href="#HOME">HOME</a>
+                <!-- START top navigation, insert links for top navigation bar-->
+                <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to right, #fc41ae, #ff5bf1, #d246eb, #bc13fe, #00ffff, #1098e1)"> 
+                <a style="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#ABOUT">ABOUT</a>
+                            <a class="nav-link" href="#">Trivia</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#TRIVIA">TRIVIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#RESOURCES">RESOURCES</a>
-                        </li>
-                        <li class="btn btn-default btn-lg">
-                            <!-- Link to login/create account html page -->
-                            <a style="color:black; ;" href="./login.html">LOG IN</a> <!-- *ATTENTION*--This text will need to change once the user logs in, to say " Hello, 'username' "-->
+                            <a style="color:black;" href="./login.html">LOG IN</a> <!-- *ATTENTION*--This text will need to change once the user logs in, to say " Hello, 'username' "-->
                         </li>
                     </ul>
                 </nav> <!-- END top navigation -->
@@ -70,12 +69,59 @@
         </div> <!-- END first MAIN BODY section/div -->
 
         <footer> <!-- START footer-->
-
+            <!-- social media links container -->
+            <div class="container p-4">
+                <!-- INSERT LINK url to website -->
+                <p>Want to support ELECTRIVIA? Please copy and share <a href="">THIS LINK</a> on your social media.</p>
+        
+            <!-- Social media sharing START -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/login" target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        
+                <!-- Twitter -->
+                <a href="https://twitter.com/login" target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        
+                <!-- Google -->
+                <a href="https://www.google.com/account" target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+        
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/?hl=en" target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/" target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                
+                <!-- Github -->
+                <a href="https://github.com/" target="_blank" class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social medi sharing END -->
+        
+            <!-- Footer Text START -->
+            <section class="mb-4">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum corrupti dicta,
+                aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Footer Text END-->
+        
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-dark" href="">www.ELECTRIVIA.com</a> <!--NEED TO insert link here-->
+            </div>
+            <!-- Copyright -->
         </footer> <!-- END footer-->
 
         <script src=""></script> <!-- Insert links to JS files here-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/017e713434.js" crossorigin="anonymous"></script>
 
 
     </body>
