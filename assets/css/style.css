@@ -230,12 +230,12 @@ h1 {
 .welcome {
   font-size: 5vh;
   padding: 10px 0 10px 0;
-  animation: flicker;
+  
 }
 .to {
   font-size: 4vh;
   padding: 0.5rem 0 1.5rem 0;
-  animation: flicker;
+  
 }
 .elec-span {
   color: #fff;
@@ -258,7 +258,7 @@ h1 {
   font-weight: bold;
   font-size: 5.5vh;
   padding:0.5rem 0 1rem 0;
-  animation: flicker;
+
 }
 /*.elec-span {
   color: #fff;
