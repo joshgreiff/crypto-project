@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 98e65efceb83bdc29c82819b99818c7619c642f1
 const logoutBtn = document.querySelector('#logout')
 
 async function logout() {
@@ -17,7 +14,6 @@ async function logout() {
         alert(response.statusText)
     }
     console.log('logout')
-<<<<<<< HEAD
 
 }
 
@@ -25,11 +21,6 @@ if (logoutBtn) {
     logoutBtn.addEventListener('click', logout)
 }
 
-
-=======
-
-}
->>>>>>> 98e65efceb83bdc29c82819b99818c7619c642f1
 
 if (logoutBtn) {
     logoutBtn.addEventListener('click', logout)
