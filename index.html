@@ -37,26 +37,30 @@
 
         <header>
             <div class="nav-container">
-                <nav class="nav-bar"> <!-- START top navigation, insert links for top navigation bar-->
-                    <ul style="list-style: none;" class="nav-list">
-                        <li class="nav-item">
-                            <a href="#HOME">HOME</a>
+                <!-- START top navigation, insert links for top navigation bar-->
+                    <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to right, #fc41ae, #ff5bf1, #d246eb, #bc13fe, #00ffff, #1098e1)">
+                    <a class="navbar-brand" href="#">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#ABOUT">ABOUT</a>
+                          <a class="nav-link" href="#">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#TRIVIA">TRIVIA</a>
+                          <a class="nav-link" href="#">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#RESOURCES">RESOURCES</a>
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li>
-                        <li class="btn btn-default btn-lg">
-                            <!-- Link to login/create account html page -->
-                            <a style="color:black; ;" href="./login.html">LOG IN</a> <!-- *ATTENTION*--This text will need to change once the user logs in, to say " Hello, 'username' "-->
-                        </li>
-                    </ul>
-                </nav> <!-- END top navigation -->
+                      </ul>
+                    </div>
+                  </nav>
+                <!-- END top navigation -->
             </div>
 
         </header>
