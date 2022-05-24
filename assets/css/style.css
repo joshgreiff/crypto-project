@@ -159,27 +159,6 @@ h1 {
   }
 }
 
-  /* adds blinking effect to text *//*
-  animation: blink-animation 3s steps(5, start) infinite;
-        -webkit-animation: blink-animation 3s steps(5, start) infinite;
-      }
-      @keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
-      }
-      @-webkit-keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
-      }
-      @-moz-keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
-      }
-*/
-
 .greeting-container {
   padding-top: 1rem;
   display: flex;
@@ -221,47 +200,3 @@ h1 {
 
   
 }
-/*.elec-span {
-  color: #fff;
-  text-shadow:
-  0 0 7px #fff,
-  0 0 10px #fff,
-  0 0 21px #fff,
-  0 0 42px #f8d210,
-  0 0 82px #f8d210,
-  0 0 92px #f8d210,
-  0 0 102px #f8d210,
-  0 0 151px #f8d210;
-
-  animation: pulsate 0.11s ease-in-out infinite alternate
-} */
-
-    /*    
-.nav-list {
-    background:white;
-    box-shadow: 0px 0px 10px; 
-    padding: 1rem 0;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.nav-item {
-    list-style: none;
-    margin-right: 2rem;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: black;
-}
-
-.nav-item:first-child {
-    margin-right: auto;
-    margin-left: 2rem;
-}
-
-*/
-
-/* Need some help setting up media queries here!*/
