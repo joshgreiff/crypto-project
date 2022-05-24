@@ -4,7 +4,7 @@
   --tertiary-color: #fa26a0;   /* hot-pink === rgba(250, 38, 160, 1) */
   --quaternary-color: #f51720; /* chili-pepper-red === rgba(245, 23, 32, 1) */
   --quinary-color: #bc13fe;    /* electric-purple === rgba(188, 19, 254, 1)*/
-  /* color pallette/combo--> 'Retro Punch' 
+  /* color pallette/combo inpiration name--> 'Retro Punch' 
      source--> https://www.canva.com/colors/color-palettes/retro-punch/ */
 }
 *{
@@ -139,6 +139,66 @@ h1 {
   }
 }
 
+@-webkit-keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 94px #f09,
+    0 0 140px #f09;
+  }
+}
+
+@-moz-keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 94px #f09,
+    0 0 140px #f09;
+  }
+}
+
   /* adds blinking effect to text *//*
   animation: blink-animation 3s steps(5, start) infinite;
         -webkit-animation: blink-animation 3s steps(5, start) infinite;
@@ -242,7 +302,5 @@ h1 {
     margin-left: 2rem;
 }
 
-/* Need some help setting up media queries!*/
-@media {
 
-}
+/* Need some help setting up media queries here!*/
