@@ -18,23 +18,6 @@ body {
   font-family: 'Electrolize', sans-serif;
 }
 
-/* START of link behavior
-
-a:hover {
-}
-
-/* END of link behavior*/
-
-
-/*
-.nav-list {
-  border:#bc13fe solid 3px;
-  border-top-width: 4px;
-  border-radius: 3px;
-
-}
-*/
-
 
 .title {
   display: flex;
