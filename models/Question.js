@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const { Model, DataTypes } = require("sequelize");
 
 const sequelize = require('../config/connection.js');
@@ -64,4 +65,41 @@ router.post("/api/question", async (req, res) => {
 }
 )
 
+=======
+const { Model, DataTypes } = require("sequelize");
+
+const sequelize = require('../config/connection.js');
+
+class Question extends Model { }
+
+Question.init(
+    {
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        question_text: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        quiz_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'quiz',
+                key: 'id'
+            }
+        }
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'question'
+    }
+)
+
+>>>>>>> 7e7e565d1b9ce6c58c88e564dcaf7bb6c5737b32
 module.exports = Question
