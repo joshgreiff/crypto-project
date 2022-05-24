@@ -14,14 +14,14 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     Category.findOne({
         where: {
-            id: req.params.id   
+            id: req.params.id
         },
         include: [
             {
-              model: Quiz,
-              attributes: ['id', 'quiz_name']
+                model: Quiz,
+                attributes: ['id', 'quiz_name']
             },
-          ]
+        ]
     })
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {

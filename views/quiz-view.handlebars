@@ -1,4 +1,4 @@
-<article class="quiz">
+{{!-- <article class="quiz">
     <h2>{{quiz.quiz_name }}</h2>
     <div>
         {{#each quiz.questions}}
@@ -10,4 +10,15 @@
         {{/each}}
         {{/each}}
     </div>
-</article>
+</article> --}}
+
+{{#each questions.questions}}
+<h2>{{question_text}}</h2>
+{{#each choices }}
+<button id="button">
+    <h2>{{answer_text}}</h2>
+</button>
+{{/each}}
+{{/each}}
+
+<script src="/javascript/takeQuiz.js"></script>

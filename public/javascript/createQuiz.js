@@ -1,10 +1,10 @@
 async function quizFormHandler(event) {
     event.preventDefault()
 
-    const quiz_name = document.querySelector(".quizname-signup").value.trim()
-    const question_text = document.querySelector(".question-one-signup").value.trim()
-    const answer_text = document.querySelector(".correct-one-signup").value.trim()
-    const answer_text_1 = document.querySelector(".answer-two-signup").value.trim()
+    const quiz_name = document.querySelector(".quiz-name-signup").value.trim()
+    const question_text = document.querySelector(".question-signup").value.trim()
+    const answer_text = document.querySelector(".correct-signup").value.trim()
+    const answer_text_1 = document.querySelector(".wrong-signup").value.trim()
     // const answer_text = {
     //     answer_text: document.querySelector(".correct-one-signup").value.trim(),
     //     is_true: true
@@ -25,16 +25,18 @@ async function quizFormHandler(event) {
 
     // const answer_text = [answer1, answer2, answer3, answer4]
 
+    const questions = [{ 'question_text': question_text },
+    { 'question_text': answer_text_1 }]
 
-
-    if (quiz_name && question_text && answer_text && answer_text_1) {
+    if (quiz_name && answer_text && questions) {
 
         const response = await fetch('/api/quizzes', {
             method: 'post',
             body: JSON.stringify({
                 quiz_name,
-                question_text,
-                answer_text
+                question_text
+
+
             }),
             headers: { 'Content-Type': 'application/json' }
         })

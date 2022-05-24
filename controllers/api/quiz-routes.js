@@ -47,11 +47,26 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
 
     Quiz.create({
-        quiz_name: req.body.quiz_name,
-        category_id: req.body.category_id,
-        user_id: req.body.user_id
     }).then(dbQuizData => {
-        res.json(dbQuizData)
+        const questions = [{ 'question_text': 'what questions' },
+        { 'question_text': 'what questions12' }]
+
+        for (var i = 0; i < questions.length; i++) {
+            let questionObj = {
+                id: dbQuizData.id,
+                quiz_name: dbQuizData.quiz_name
+            }
+            questions.push(questionObj)
+        }
+
+        console.log(questions)
+
+        Question.bulkCreate(questions, { returning: true })
+            .then(dbQuestion => {
+                console.log(dbQuestion)
+            });
+        //question_text bulk create pass through relevant data
+        // .then bulk create for choices
     }).catch(err => {
         console.log(err)
         res.status(500).json(err)
