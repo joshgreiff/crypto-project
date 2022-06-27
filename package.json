@@ -9,4 +9,8 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.19.2"
   }
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start: "node server.js"
+  },
 }
